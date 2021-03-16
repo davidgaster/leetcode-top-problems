@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/climbing-stairs/
 class Solution:
     def climbStairs(self, n: int) -> int:
         '''
@@ -5,7 +6,9 @@ class Solution:
            _| |
          _|   |
         |_____|
-        
+        Dynamic programming: memoize previously computed subproblems.
+        Top-down approach, take all the ways to jump to the nth stair from
+        the n-1th and n-2th stairs.
         '''
         memo = {}
         return self.helper(n, memo)
