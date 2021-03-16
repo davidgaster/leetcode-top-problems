@@ -1,3 +1,4 @@
+# https://leetcode.com/problems/missing-number/
 class Solution:
     '''
     Use an array to set every number that exists to 1
