@@ -1,7 +1,6 @@
 # The Top 75 Most Useful Leetcode Problems
 Solutions solved in Python, with comments
 
-Good luck and Happy New Year!
 Array
 - [x] - Two Sum - https://leetcode.com/problems/two-sum/
 - [x] - Best Time to Buy and Sell Stock - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
