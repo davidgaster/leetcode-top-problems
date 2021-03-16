@@ -1,5 +1,5 @@
 # The Top 75 Most Useful Leetcode Problems
-Solutions solved in Python, with comments
+Solutions in Python, with comments
 
 Array
 - [x] - Two Sum - https://leetcode.com/problems/two-sum/
