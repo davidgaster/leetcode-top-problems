@@ -55,7 +55,7 @@ dp[i] = min(dp[i-1] + costs[0], dp[i-7] + costs[1], dp[i-30] + costs[2])
 """
 def min_travel_dollars(days, costs):
     days_set = set(days)
-    n = 365+30+1
+    n = 365+1
     dp = [0]*(n+1)
     for i in range(1, n+1):
         if i in days_set:
