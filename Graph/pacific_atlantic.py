@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/pacific-atlantic-water-flow/
+from collections import deque
 class Solution:
     '''
     Pacific ~   ~   ~   ~   ~ 
@@ -9,7 +10,7 @@ class Solution:
        ~ (5)  1   1   2   4  *
           *   *   *   *   * Atlantic
           
-    1. Start at the edge of the atlantc ocean, depth first search going from cells that
+    1. Start at the edge of the atlantc ocean, dfs/bfs going from cells that
     have equal or greater height.
     2. When you hit a cell that can no longer be explored further, stop
     3. Start at edges of pacific ocean, do the same procedure and if you find a position
@@ -28,7 +29,19 @@ class Solution:
             dfs(r+1, c, curr, visited)
             dfs(r, c-1, curr, visited)
             dfs(r, c+1, curr, visited)
-                    
+        
+        def bfs(r, c, prev, visited):
+            queue = deque([(r,c)])
+            while queue:
+                x, y = queue.pop()
+                visited.add((x,y))
+                for dx,dy in [[1,0],[0,1],[-1,0],[0,-1]]:
+                    r = x + dx
+                    c = y + dy
+                    if r < 0 or c < 0 or r >= m or c >= n or (r,c) in visited or matrix[r][c] < matrix[x][y]:
+                        continue
+                    queue.appendleft((r, c))
+        
         if not matrix:
             return []
         
@@ -45,4 +58,4 @@ class Solution:
             dfs(m-1, i, -1, atlantic)
             dfs(0, i, -1, pacific)
         
-        return list(filter(lambda x: x in atlantic, pacific))
+        return list(filter(lambda x: x in atlantic, pacific)) # intersection of the two
