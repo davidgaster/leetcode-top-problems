@@ -90,7 +90,7 @@ class Solution:
                     rank[pj] += 1
         
         if not nums:
-            return 0 # corner case
+            return 0
         
         # first pass is initialize parent and rank for all num in nums
         parent, rank, nums = {}, {}, set(nums)
