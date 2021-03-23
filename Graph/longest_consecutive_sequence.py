@@ -21,7 +21,7 @@ class Solution:
      1: [2]
     }
     
-    Approach: Traverse through the array and build an undirected graph where 2 nodes are connected if they are of
+    Approach: Traverse through the array and build an undirected graph where to nodes are connected if they are of
     distance 1 from eachother, i.e. 4 and 3 are connected.
     Traverse every node in the graph once more, and the longest traversal is the longest sequence of nums in a row.
     
@@ -66,3 +66,50 @@ class Solution:
             
             
         return max_count    
+
+    '''
+    Alternate solution: Use union find using disjoint sets!
+    Each num is in the same set if they are connected to num-1, num+1 element.
+    Find parents and join them together
+    '''
+    def union_find(self, nums: List[int]) -> int:
+        
+        def find(i):
+            if i != parent[i]:
+                parent[i] = find(parent[i])
+            return parent[i]
+        
+        def union(i,j):
+            pi, pj = find(i), find(j)
+            if pi != pj:
+                if rank[pi] >= pj:
+                    parent[pj] = pi
+                    rank[pi] += 1
+                else:
+                    parent[pi] = pj
+                    rank[pj] += 1
+        
+        if not nums:
+            return 0 # corner case
+        
+        # first pass is initialize parent and rank for all num in nums
+        parent, rank, nums = {}, {}, set(nums)
+        for num in nums: # init
+            parent[num] = num
+            rank[num] = 0
+            
+        # second pass: union nums[i] with nums[i]-1 and nums[i]+1 if ums[i]-1 and nums[i]+1 in nums
+        for num in nums:
+            if num-1 in nums:
+                union(num-1, num)
+            if num+1 in nums:
+                union(num+1, num)
+                    
+        # second pass find numbers under the same parent
+        d = collections.defaultdict(list)
+        for num in nums:
+            d[find(num)].append(num)
+        return max([len(l) for l in d.values()])
+        
+        
+    
