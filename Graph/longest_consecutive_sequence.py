@@ -21,7 +21,7 @@ class Solution:
      1: [2]
     }
     
-    Approach: Traverse through the array and build an undirected graph where to nodes are connected if they are of
+    Approach: Traverse through the array and build an undirected graph where 2 nodes are connected if they are of
     distance 1 from eachother, i.e. 4 and 3 are connected.
     Traverse every node in the graph once more, and the longest traversal is the longest sequence of nums in a row.
     
