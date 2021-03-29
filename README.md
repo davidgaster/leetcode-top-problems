@@ -45,7 +45,7 @@ Graph
 - [x] - Number of Connected Components in an Undirected Graph (Leetcode Premium) - https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
 ---
 Interval
-- [ ] - Insert Interval - https://leetcode.com/problems/insert-interval/
+- [x] - Insert Interval - https://leetcode.com/problems/insert-interval/
 - [ ] - Merge Intervals - https://leetcode.com/problems/merge-intervals/
 - [ ] - Non-overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/
 - [ ] - Meeting Rooms (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms/
