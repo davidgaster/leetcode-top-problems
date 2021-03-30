@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/pacific-atlantic-water-flow/
-from collections import deque
 class Solution:
     '''
     Pacific ~   ~   ~   ~   ~ 
@@ -10,52 +9,59 @@ class Solution:
        ~ (5)  1   1   2   4  *
           *   *   *   *   * Atlantic
           
-    1. Start at the edge of the atlantc ocean, dfs/bfs going from cells that
+    1. Start at the edge of the atlantc ocean, depth first search going from cells that
     have equal or greater height.
     2. When you hit a cell that can no longer be explored further, stop
     3. Start at edges of pacific ocean, do the same procedure and if you find a position
     already explored in parts 1-2, add this to your answer.
+    
+    Optimization: keep a cache of intermediate results, all the ones that have already been found to
+    originate from the pacific/atlantic already will be set to True.
     '''
-    def pacificAtlantic(self, matrix: List[List[int]]) -> List[List[int]]:
+    def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
         
-        def dfs(r, c, prev, visited):
+        ret = []
+        M,N = len(heights), len(heights[0])
+        dirs = [[1,0], [-1,0], [0,-1], [0,1]] # UDLR
+        
+        can_reach_pacific = [[False for i in range(N)] for j in range(M)]
+        can_reach_atlantic = [[False for i in range(N)] for j in range(M)]
+        
+        def get_pacific(i,j):
             
-            if r < 0 or c < 0 or r >= m or c >= n or (r,c) in visited or matrix[r][c] < prev:
+            if can_reach_pacific[i][j]:
                 return
             
-            curr = matrix[r][c]
-            visited.add((r, c))
-            dfs(r-1, c, curr, visited)
-            dfs(r+1, c, curr, visited)
-            dfs(r, c-1, curr, visited)
-            dfs(r, c+1, curr, visited)
+            can_reach_pacific[i][j] = True
+            
+            for di, dj in dirs:
+                ni, nj = i+di, j+dj
+                if ni >= 0 and ni < M and nj >= 0 and nj < N and heights[ni][nj] >= heights[i][j]:
+                    get_pacific(ni,nj)
         
-        def bfs(r, c, prev, visited):
-            queue = deque([(r,c)])
-            while queue:
-                x, y = queue.pop()
-                visited.add((x,y))
-                for dx,dy in [[1,0],[0,1],[-1,0],[0,-1]]:
-                    r = x + dx
-                    c = y + dy
-                    if r < 0 or c < 0 or r >= m or c >= n or (r,c) in visited or matrix[r][c] < matrix[x][y]:
-                        continue
-                    queue.appendleft((r, c))
+        def get_atlantic(i,j):
+            if can_reach_atlantic[i][j]:
+                return
+            
+            can_reach_atlantic[i][j] = True
+            
+            for di, dj in dirs:
+                ni, nj = i+di, j+dj
+                if ni >= 0 and ni < M and nj >= 0 and nj < N and heights[ni][nj] >= heights[i][j]:
+                    get_atlantic(ni,nj)
         
-        if not matrix:
-            return []
+        for x in range(M):
+            get_pacific(x,0)
+            get_atlantic(x,N-1)
+            
+        for y in range(N):
+            get_pacific(0,y)
+            get_atlantic(M-1,y)
         
-        atlantic = set()
-        pacific = set()
         
-        m = len(matrix)
-        n = len(matrix[0])
-        for i in range(m):
-            dfs(i, n-1, -1, atlantic)
-            dfs(i, 0, -1, pacific)
+        for i in range(M):
+            for j in range(N):
+                if can_reach_atlantic[i][j] and can_reach_pacific[i][j]:
+                    ret.append([i,j])
         
-        for i in range(n):
-            dfs(m-1, i, -1, atlantic)
-            dfs(0, i, -1, pacific)
-        
-        return list(filter(lambda x: x in atlantic, pacific)) # intersection of the two
+        return ret
