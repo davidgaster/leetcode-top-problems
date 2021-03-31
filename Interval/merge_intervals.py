@@ -14,6 +14,17 @@ class Solution(object):
         --> keep track of the maximum ending time throughout. avoid a case like this:
         [[1,10],[2,3],[4,5],[6,7],[8,9]]
         ignore all the intervals that have end time less than 10.
+
+        3 cases
+        1. Non overlapping
+           a [    ]
+                    b []
+        2. Overlapping
+            a [    ]
+               b [   ]
+        3. Completely contained
+            a [     ]
+              b [ ]
         """
         if len(intervals) == 1:
             return intervals
