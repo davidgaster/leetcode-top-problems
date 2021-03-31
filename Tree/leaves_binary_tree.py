@@ -34,6 +34,8 @@ class Solution:
         Optimization: O(n) complexity
         Get the height of every node in the traversal, then add it to that position
         int the output list
+        height[1] = 0
+        height[2] = 1
         []
         '''
         def dfs(node, parent, leaves):
