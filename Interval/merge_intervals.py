@@ -26,19 +26,20 @@ class Solution(object):
             a [     ]
               b [ ]
         """
-        if len(intervals) == 1:
+        if len(intervals) <= 1:
             return intervals
                 
         intervals.sort()
         output = []
-        lo = 0
-        while lo < len(intervals):
-            hi = lo
-            max_end = intervals[hi][1]
-            while hi < len(intervals)-1 and max_end >= intervals[hi+1][0]:
-                max_end = max(max_end, intervals[hi+1][1])
-                hi += 1
-            output.append([intervals[lo][0], max_end])
-            lo = hi+1
-                
+        currentInterval = intervals[0]
+        for i in range(1, len(intervals)):
+            
+            interval = intervals[i]
+            if currentInterval[1] < interval[0]: # before
+                output.append(currentInterval)
+                currentInterval = intervals[i]
+            else: # all other cases
+                currentInterval[0] = min(currentInterval[0], interval[0])
+                currentInterval[1] = max(currentInterval[1], interval[1])
+        output.append(currentInterval)
         return output
