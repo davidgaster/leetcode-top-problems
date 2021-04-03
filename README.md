@@ -52,12 +52,12 @@ Interval
 - [x] - Meeting Rooms II (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms-ii/
 ---
 Linked List
-- [ ] - Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/
-- [ ] - Detect Cycle in a Linked List - https://leetcode.com/problems/linked-list-cycle/
-- [ ] - Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
-- [ ] - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
-- [ ] - Remove Nth Node From End Of List - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-- [ ] - Reorder List - https://leetcode.com/problems/reorder-list/
+- [x] - Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/
+- [x] - Detect Cycle in a Linked List - https://leetcode.com/problems/linked-list-cycle/
+- [x] - Merge Two Sorted Lists - https://leetcode.com/problems/merge-two-sorted-lists/
+- [x] - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
+- [x] - Remove Nth Node From End Of List - https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+- [x] - Reorder List - https://leetcode.com/problems/reorder-list/
 ---
 Matrix
 - [ ] - Set Matrix Zeroes - https://leetcode.com/problems/set-matrix-zeroes/
@@ -78,10 +78,10 @@ String
 - [ ] - Encode and Decode Strings (Leetcode Premium) - https://leetcode.com/problems/encode-and-decode-strings/
 ---
 Tree
-- [ ] - Maximum Depth of Binary Tree - https://leetcode.com/problems/maximum-depth-of-binary-tree/
+- [x] - Maximum Depth of Binary Tree - https://leetcode.com/problems/maximum-depth-of-binary-tree/
 - [x] - Find Leaves of Binary Tree https://leetcode.com/problems/find-leaves-of-binary-tree/ 
-- [ ] - Same Tree - https://leetcode.com/problems/same-tree/
-- [ ] - Invert/Flip Binary Tree - https://leetcode.com/problems/invert-binary-tree/
+- [x] - Same Tree - https://leetcode.com/problems/same-tree/
+- [x] - Invert/Flip Binary Tree - https://leetcode.com/problems/invert-binary-tree/
 - [ ] - Binary Tree Maximum Path Sum - https://leetcode.com/problems/binary-tree-maximum-path-sum/
 - [ ] - Binary Tree Level Order Traversal - https://leetcode.com/problems/binary-tree-level-order-traversal/
 - [ ] - Serialize and Deserialize Binary Tree - https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
@@ -95,6 +95,6 @@ Tree
 - [ ] - Word Search II - https://leetcode.com/problems/word-search-ii/
 ---
 Heap
-- [ ] - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
-- [ ] - Top K Frequent Elements - https://leetcode.com/problems/top-k-frequent-elements/
+- [x] - Merge K Sorted Lists - https://leetcode.com/problems/merge-k-sorted-lists/
+- [x] - Top K Frequent Elements - https://leetcode.com/problems/top-k-frequent-elements/
 - [ ] - Find Median from Data Stream - https://leetcode.com/problems/find-median-from-data-stream/
