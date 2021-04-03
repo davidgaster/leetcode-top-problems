@@ -1,5 +1,5 @@
 # The Top Most Useful Leetcode Problems
-Solutions in Python, with comments
+Solutions in Python, with explanations
 
 Array
 - [x] - Two Sum - https://leetcode.com/problems/two-sum/
@@ -33,6 +33,9 @@ Dynamic Programming
 - [x] - Decode Ways - https://leetcode.com/problems/decode-ways/
 - [x] - Unique Paths - https://leetcode.com/problems/unique-paths/
 - [x] - Jump Game - https://leetcode.com/problems/jump-game/
+- [x] - Frog Jump - # https://leetcode.com/problems/frog-jump/
+- [ ] - Word Break - https://leetcode.com/problems/word-break/ 
+- [ ] - Word Break II - https://leetcode.com/problems/word-break-ii/ 
 ---
 Graph
 - [x] - Clone Graph - https://leetcode.com/problems/clone-graph/
@@ -50,6 +53,7 @@ Interval
 - [x] - Non-overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/
 - [x] - Meeting Rooms (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms/
 - [x] - Meeting Rooms II (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms-ii/
+- [ ] - Task Scheduler - https://leetcode.com/problems/task-scheduler/
 ---
 Linked List
 - [x] - Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/
