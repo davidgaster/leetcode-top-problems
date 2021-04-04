@@ -25,7 +25,6 @@ Dynamic Programming
 - [x] - Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/
 - [x] - Longest Common Subsequence - https://leetcode.com/problems/longest-common-subsequence/ 
 - [x] - Edit Distance - https://leetcode.com/problems/edit-distance/ 
-- [x] - Word Break Problem - https://leetcode.com/problems/word-break/
 - [x] - Combination Sum - https://leetcode.com/problems/combination-sum-iv/
 - [x] - Minimum Cost For Tickets - https://leetcode.com/problems/minimum-cost-for-tickets/
 - [x] - House Robber - https://leetcode.com/problems/house-robber/
@@ -34,7 +33,7 @@ Dynamic Programming
 - [x] - Unique Paths - https://leetcode.com/problems/unique-paths/
 - [x] - Jump Game - https://leetcode.com/problems/jump-game/
 - [x] - Frog Jump - # https://leetcode.com/problems/frog-jump/
-- [ ] - Word Break - https://leetcode.com/problems/word-break/ 
+- [x] - Word Break - https://leetcode.com/problems/word-break/ 
 - [ ] - Word Break II - https://leetcode.com/problems/word-break-ii/ 
 ---
 Graph
