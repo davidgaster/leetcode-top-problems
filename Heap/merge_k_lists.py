@@ -19,8 +19,8 @@ class Solution:
     4     8 -> 9 -> 17
        ]
     start = 0
-    end = 2
-    mid = 1
+    end = 4
+    mid = 2
     '''
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
         return self.mergeSort(lists, 0, len(lists)-1)
