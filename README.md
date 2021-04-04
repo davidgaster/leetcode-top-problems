@@ -34,7 +34,7 @@ Dynamic Programming
 - [x] - Jump Game - https://leetcode.com/problems/jump-game/
 - [x] - Frog Jump - # https://leetcode.com/problems/frog-jump/
 - [x] - Word Break - https://leetcode.com/problems/word-break/ 
-- [ ] - Word Break II - https://leetcode.com/problems/word-break-ii/ 
+- [x] - Word Break II - https://leetcode.com/problems/word-break-ii/ 
 ---
 Graph
 - [x] - Clone Graph - https://leetcode.com/problems/clone-graph/
