@@ -79,6 +79,8 @@ String
 - [ ] - Longest Palindromic Substring - https://leetcode.com/problems/longest-palindromic-substring/
 - [ ] - Palindromic Substrings - https://leetcode.com/problems/palindromic-substrings/
 - [ ] - Encode and Decode Strings (Leetcode Premium) - https://leetcode.com/problems/encode-and-decode-strings/
+- [ ] - Reorganize String - https://leetcode.com/problems/reorganize-string/ 
+- [ ] - Reorganize String K Distance Apart - https://leetcode.com/problems/rearrange-string-k-distance-apart/
 ---
 Tree
 - [x] - Maximum Depth of Binary Tree - https://leetcode.com/problems/maximum-depth-of-binary-tree/
