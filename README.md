@@ -52,7 +52,7 @@ Interval
 - [x] - Non-overlapping Intervals - https://leetcode.com/problems/non-overlapping-intervals/
 - [x] - Meeting Rooms (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms/
 - [x] - Meeting Rooms II (Leetcode Premium) - https://leetcode.com/problems/meeting-rooms-ii/
-- [ ] - Task Scheduler - https://leetcode.com/problems/task-scheduler/
+- [x] - Task Scheduler - https://leetcode.com/problems/task-scheduler/
 ---
 Linked List
 - [x] - Reverse a Linked List - https://leetcode.com/problems/reverse-linked-list/
