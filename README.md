@@ -32,7 +32,7 @@ Dynamic Programming
 - [x] - Decode Ways - https://leetcode.com/problems/decode-ways/
 - [x] - Unique Paths - https://leetcode.com/problems/unique-paths/
 - [x] - Jump Game - https://leetcode.com/problems/jump-game/
-- [x] - Frog Jump - # https://leetcode.com/problems/frog-jump/
+- [x] - Frog Jump - https://leetcode.com/problems/frog-jump/
 - [x] - Word Break - https://leetcode.com/problems/word-break/ 
 - [x] - Word Break II - https://leetcode.com/problems/word-break-ii/ 
 ---
